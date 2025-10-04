@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubert Kożuchowski - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 0;
+        }
+        
+        .left-column {
+            padding: 40px;
+        }
+        
+        .right-column {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-left: 1px solid #e9ecef;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .job:last-child {
+            border-bottom: none;
+        }
+        
+        .job-header {
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .company {
+            color: #3498db;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+        
+        .dates {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        .tech-stack {
+            background: #e3f2fd;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 0.85em;
+            margin: 10px 0;
+            color: #1565c0;
+        }
+        
+        .responsibilities {
+            list-style: none;
+            margin: 10px 0;
+        }
+        
+        .responsibilities li {
+            margin: 6px 0;
+            padding-left: 15px;
+            position: relative;
+            font-size: 0.9em;
+        }
+        
+        .responsibilities li:before {
+            content: "▶";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+        }
+        
+        .skills-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .skill-category h3 {
+            color: #2c3e50;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .skill-tag {
+            background: #3498db;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        
+        .education-item, .cert-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .education-item:last-child, .cert-item:last-child {
+            border-bottom: none;
+        }
+        
+        .degree {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.9em;
+        }
+        
+        .school {
+            color: #3498db;
+            font-size: 0.85em;
+            margin: 3px 0;
+        }
+        
+        .year {
+            color: #666;
+            font-size: 0.8em;
+        }
+        
+        .languages {
+            display: grid;
+            gap: 10px;
+        }
+        
+        .language {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+        }
+        
+        .language-level {
+            background: #3498db;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75em;
+        }
+        
+        .interests {
+            font-size: 0.85em;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .consent {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.75em;
+            color: #666;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; }
+            .section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Hubert Kożuchowski</h1>
+            <div class="subtitle">DevOps Engineer & Platform Engineer</div>
+            <div class="contact-info">
+                <div class="contact-item">📍 01-175 Warsaw, Młynarska 25/22</div>
+                <div class="contact-item">📞 +48 508-180-507</div>
+                <div class="contact-item">✉️ hubertkozuchowski@gmail.com</div>
+                <div class="contact-item">💼 linkedin.com/in/hubert-kozuchowski</div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <section class="section">
+                    <h2>Professional Experience</h2>
+                    
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">DevOps Engineer & Platform Engineer</div>
+                            <div class="company">Procter & Gamble</div>
+                            <div class="dates">July 2023 - Present</div>
+                        </div>
+                        <div class="tech-stack">
+                            <strong>Tech Stack:</strong> PowerShell, Bash, Azure, GitHub Actions, Next.js, Docker, Kubernetes, Python, JavaScript, Grafana, Prometheus
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Management and maintenance of 600+ web and mobile websites on Microsoft Azure cloud infrastructure</li>
+                            <li>Implementation of GitHub Actions and Centralized Pipelines concept</li>
+                            <li>CI/CD process automation using GitHub Workflows and Composite Actions</li>
+                            <li>Multi-tenant environment setup with observability and metrics implementation</li>
+                            <li>Implementation of security, accessibility and SNYK testing in pipelines</li>
+                            <li>Access Management automation and reporting using PowerShell/Bash scripting</li>
+                            <li>Leading daily stand-ups, retrospectives and Agile methodology practices</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">IT Manager & Site Reliability Engineer</div>
+                            <div class="company">Procter & Gamble</div>
+                            <div class="dates">November 2020 - June 2023</div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Automated WordPress website provisioning in compliance with P&G standards</li>
+                            <li>Observability model implementation (log analysis, tracing) and SSO integration with PING</li>
+                            <li>Platform operations management using Application Insights, Azure Monitoring, Dynatrace</li>
+                            <li>Design and implementation of scalable, reliable systems architecture</li>
+                            <li>Collaboration with software engineering teams on system architecture</li>
+                            <li>Post-incident reviews and corrective action implementation</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">Identity & Access Management Engineering Specialist</div>
+                            <div class="company">Accenture</div>
+                            <div class="dates">December 2019 - October 2020</div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Development of PowerShell automation tools (Active Directory, .NET libraries with GUI)</li>
+                            <li>SSL certificate approval/rejection process automation via REST API</li>
+                            <li>Public Key Infrastructure design, monitoring, auditing, and automation</li>
+                            <li>Hardware Security Module & Smart Card Management Systems administration</li>
+                            <li>Scheduled tasks creation based on advanced scripts and functions</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">Identity & Access Management Specialist</div>
+                            <div class="company">Accenture</div>
+                            <div class="dates">November 2018 - December 2019</div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Enterprise Active Directory administration (500K+ users, 1M+ computers)</li>
+                            <li>MFA solutions management: Symantec VIP and Azure MFA</li>
+                            <li>Azure Active Directory and Office 365/Exchange environment administration</li>
+                            <li>SSL/PKI certificate management (20K+ certificates) with automation</li>
+                            <li>2nd Line Support in ServiceNow for IAM technologies</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="job-title">IT Specialist</div>
+                            <div class="company">Wieża s.c.</div>
+                            <div class="dates">January 2017 - October 2018</div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Active Directory administration (Windows Server 2008/2012/2016)</li>
+                            <li>Network device configuration and LAN/VLAN network design</li>
+                            <li>Microsoft Hyper-V virtualization and backup policy implementation</li>
+                            <li>Industry software installation (Comarch ERP, AutoCAD)</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="section">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Cloud Platforms</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Microsoft Azure</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">GCP</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>CI/CD & DevOps</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">GitHub Actions</span>
+                                <span class="skill-tag">Azure DevOps</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Kubernetes</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Scripting</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PowerShell</span>
+                                <span class="skill-tag">Bash</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Monitoring</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Grafana</span>
+                                <span class="skill-tag">Prometheus</span>
+                                <span class="skill-tag">Azure Monitor</span>
+                                <span class="skill-tag">Dynatrace</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Web Technologies</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">WordPress</span>
+                                <span class="skill-tag">REST API</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">ServiceNow</span>
+                                <span class="skill-tag">SNYK</span>
+                                <span class="skill-tag">Contentful</span>
+                                <span class="skill-tag">Veeam</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <div class="degree">Master of Science in IT Management</div>
+                        <div class="school">University of Information Technology and Management</div>
+                        <div class="year">2020.10 - 2022.05</div>
+                        <div style="font-size: 0.8em; color: #666; margin-top: 3px;">Grade: Very Good</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="degree">Bachelor of Engineering - Applied Computer Science</div>
+                        <div class="school">University of Information Technology and Management</div>
+                        <div class="year">2020.10 - 2022.05</div>
+                        <div style="font-size: 0.8em; color: #666; margin-top: 3px;">Grade: Very Good</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="degree">IT Technician</div>
+                        <div class="school">School Complex No. 2 named after Leon Rutkowski in Płońsk</div>
+                        <div class="year">2012.09 - 2016.05</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Languages</h2>
+                    <div class="languages">
+                        <div class="language">
+                            <span>Polish</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language">
+                            <span>English</span>
+                            <span class="language-level">Fluent</span>
+                        </div>
+                        <div class="language">
+                            <span>German</span>
+                            <span class="language-level">Advanced</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Key Certifications</h2>
+                    <div class="cert-item">
+                        <div class="degree">IBM Applied DevOps Engineering</div>
+                        <div class="year">2024</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="degree">Meta Front-End Developer</div>
+                        <div class="year">2024</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="degree">DevOps on AWS</div>
+                        <div class="year">2023</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="degree">Microsoft Azure for Data Engineering</div>
+                        <div class="year">2023</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="degree">Containers with Docker, Kubernetes and OpenShift</div>
+                        <div class="year">2023</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="degree">DevOps Foundation Certification</div>
+                        <div class="year">2021</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="degree">SRE Foundation Certification</div>
+                        <div class="year">2021</div>
+                    </div>
+                    <div style="font-size: 0.8em; color: #666; margin-top: 10px; font-style: italic;">
+                        + 35 additional certifications in Cloud, DevOps, and Automation
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Interests</h2>
+                    <div class="interests">
+                        <strong>IT Technologies:</strong> Automation in Hybrid Cloud environments, Enterprise Architecture, Information Security
+                        <br><br>
+                        <strong>Hobbies:</strong> Music Production, World of Warcraft (Warlock Loremaster Talines)
+                        <br><br>
+                        <em>"There are no gaps inside processes - only communication can fail."</em>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="consent">
+            I hereby agree for processing my personal data included in my job application for the purpose of recruitment (as defined in the Act of August 29, 1997 on the Protection of Personal Data, Journal of Laws No. 133, item 883).
+        </div>
+    </div>
+</body>
+</html>
