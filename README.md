@@ -144,8 +144,8 @@ prometheus-query 'up{job="kubernetes-nodes"}'
 - **[Viral Campaign Builder](projects/viral-epic-campaign.html)** - Marketing automation tool
 
 ### Epic Videos
-- **[🎥 Epic LinkedIn Demo](epic-linkedin-video.mp4)** - System demonstration
-- **[🚀 GROK Epic Sequence](GROK_12SEC_EPIC_FULL_EPIC_SEQUENCE.mp4)** - Full project showcase
+- **[🎥 Epic LinkedIn Demo](https://media.githubusercontent.com/media/kozuchowskihubert/DevOps/main/projects/epic-linkedin-video.mp4)** - System demonstration
+- **[🚀 GROK Epic Sequence](https://media.githubusercontent.com/media/kozuchowskihubert/DevOps/main/projects/GROK_12SEC_EPIC_FULL_EPIC_SEQUENCE.mp4)** - Full project showcase
 
 ## 📞 Contact & Collaboration
 

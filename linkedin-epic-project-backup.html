@@ -30,7 +30,6 @@
         }
         .epic-text {
             background: linear-gradient(45deg, #FFD700, #FF6347);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
@@ -149,60 +148,16 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="text-center mb-4">🎬 The Epic Video</h2>
-                    
-                    <!-- Primary Video Display -->
                     <div class="video-container mb-4">
-                        <video controls muted preload="metadata" style="width: 100%; height: auto; border-radius: 10px;">
-                            <source src="https://media.githubusercontent.com/media/kozuchowskihubert/DevOps/main/projects/epic-linkedin-video.mp4" type="video/mp4">
-                            <source src="https://github.com/kozuchowskihubert/DevOps/raw/main/projects/epic-linkedin-video.mp4" type="video/mp4">
-                            <source src="./projects/epic-linkedin-video.mp4" type="video/mp4">
-                            <source src="projects/epic-linkedin-video.mp4" type="video/mp4">
-                            <p>Your browser does not support the video tag.</p>
+                        <video controls autoplay muted loop style="width: 100%; height: 100%;">
+                            <source src="epic-linkedin-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
                         </video>
-                    </div>
-                    
-                    <!-- GitHub Pages Video Issues Notice -->
-                    <div class="alert alert-success text-center">
-                        <h5>🎬 Video Access</h5>
-                        <p class="mb-3">Multiple options to view the epic LinkedIn automation demo:</p>
-                        
-                        <div class="row g-2">
-                            <div class="col-md-3">
-                                <a href="https://media.githubusercontent.com/media/kozuchowskihubert/DevOps/main/projects/epic-linkedin-video.mp4" 
-                                   class="btn btn-primary w-100" target="_blank">
-                                    <i class="fas fa-play"></i><br>
-                                    <small>Direct Play</small>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="https://github.com/kozuchowskihubert/DevOps/raw/main/projects/epic-linkedin-video.mp4" 
-                                   class="btn btn-info w-100" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i><br>
-                                    <small>GitHub View</small>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <a href="https://media.githubusercontent.com/media/kozuchowskihubert/DevOps/main/projects/epic-linkedin-video.mp4" 
-                                   class="btn btn-success w-100" download="epic-linkedin-demo.mp4">
-                                    <i class="fas fa-download"></i><br>
-                                    <small>Download</small>
-                                </a>
-                            </div>
-                            <div class="col-md-3">
-                                <button class="btn btn-warning w-100" onclick="window.open('data:text/html,<video controls autoplay style=width:100%><source src=https://media.githubusercontent.com/media/kozuchowskihubert/DevOps/main/projects/epic-linkedin-video.mp4></video>', '_blank')">
-                                    <i class="fas fa-rocket"></i><br>
-                                    <small>Force Play</small>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <p class="mt-3 mb-0">
-                            <strong>🎯 12-Second Epic Demo:</strong> LinkedIn automation with AI-generated visuals + custom soundtrack
-                        </p>
-                    </div>
-                    
-                    <div class="text-center mb-4">
-                        <div class="d-flex align-items-center justify-content-center">
+                        <video controls autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="epic-linkedin-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="d-flex align-items-center justify-content-center h-100" style="display: none;">
                             <div class="text-center">
                                 <i class="fas fa-play-circle fa-5x text-primary mb-3"></i>
                                 <h4>12-Second Epic Fusion</h4>
