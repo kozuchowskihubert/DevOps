@@ -31,3 +31,4 @@ config.json
 *.swp
 
 # Professional portfolio - keep only production files visible
+.dev-archive/
