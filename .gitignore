@@ -1,0 +1,33 @@
+# DevOps Portfolio .gitignore
+# Professional repository - hide development artifacts
+
+# Archive directories
+archived_*
+backup_*
+old_*
+
+# Development files
+*.log
+*.tmp
+*.temp
+.DS_Store
+*.pyc
+__pycache__/
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+
+# Personal data
+credentials.json
+config.json
+*.key
+*.pem
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Professional portfolio - keep only production files visible
