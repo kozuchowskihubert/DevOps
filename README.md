@@ -139,7 +139,7 @@ prometheus-query 'up{job="kubernetes-nodes"}'
 **[📁 All Projects](projects/)** - View specialized project demonstrations and case studies
 
 ### Featured Projects
-- **[LinkedIn Epic Project](projects/linkedin-epic-project.html)** - Advanced job automation system
+- **[🚀 LinkedIn Epic Project](linkedin-epic-project.html)** - Advanced job automation system *(Main showcase)*
 - **[GROK AI Application](projects/grok-ai-job-application.html)** - AI-powered application platform  
 - **[Viral Campaign Builder](projects/viral-epic-campaign.html)** - Marketing automation tool
 
