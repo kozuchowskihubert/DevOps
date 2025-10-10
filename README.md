@@ -1,39 +1,32 @@
-# DevOps Professional Portfolio
+# Hubert Kozuchowski
 
-## 🚀 Hubert Kozuchowski - Senior DevOps Engineer
+**Senior DevOps Engineer** | Cloud Infrastructure & Automation Specialist
 
-Professional DevOps portfolio showcasing automation tools, infrastructure solutions, and cloud expertise.
+## Portfolio
 
-### 📊 Portfolio Contents
+**[📄 Resume](Hubert-Kozuchowski.html)** | **[🏠 Portfolio Site](index.html)**
 
-- **🏠 index.html** - Professional portfolio homepage
-- **📄 Hubert-Kozuchowski.html** - Comprehensive professional resume
-- **📁 projects/** - Specialized project demonstrations
-- **📚 GROK_AI_APPLICATION_README.md** - Project documentation
+## Core Expertise
 
-### 🎯 Expertise Areas
+- **Cloud Platforms**: AWS, Azure, GCP
+- **Infrastructure**: Kubernetes, Terraform, Docker
+- **CI/CD**: Jenkins, GitLab, GitHub Actions
+- **Monitoring**: Prometheus, Grafana, ELK Stack
+- **Programming**: Python, Bash, Go
 
-- ☁️ **Cloud Infrastructure** - AWS, Azure, GCP
-- 🚀 **DevOps Automation** - CI/CD, Infrastructure as Code
-- 🐳 **Containerization** - Kubernetes, Docker
-- 📊 **Monitoring & Observability** - Prometheus, Grafana
-- 🔧 **Automation Tools** - Terraform, Ansible, Python
+## Key Achievements
 
-### 🛠️ Professional Projects
+- Reduced infrastructure costs by **40%** through optimization
+- Accelerated deployment speed by **80%** with automated pipelines
+- Maintained **99.9% uptime** for production systems serving 1M+ daily requests
+- Led DevOps transformation for **100+ developers**
 
-- **LinkedIn Job Search Automation** - AI-powered job application system
-- **Cloud Infrastructure Optimization** - 40% cost reduction, 80% faster deployments
-- **CI/CD Pipeline Implementation** - Serving 100+ developers
-- **Kubernetes Cluster Management** - 1M+ requests daily, 99.9% uptime
+## Projects
 
-### 📞 Contact
+View specialized projects in the **[projects/](projects/)** directory.
 
-- **📧 Email:** hubert.kozuchowski@devops.com
-- **💼 LinkedIn:** [linkedin.com/in/hubert-kozuchowski](https://linkedin.com/in/hubert-kozuchowski)
-- **🐙 GitHub:** [github.com/kozuchowskihubert](https://github.com/kozuchowskihubert)
+## Contact
 
----
-
-*Professional DevOps Engineer specializing in cloud infrastructure and automation*
-
-**Repository cleaned and organized:** {datetime.now().strftime('%B %d, %Y')}
+**Email**: hubert.kozuchowski@devops.com  
+**LinkedIn**: [linkedin.com/in/hubert-kozuchowski](https://linkedin.com/in/hubert-kozuchowski)  
+**GitHub**: [github.com/kozuchowskihubert](https://github.com/kozuchowskihubert)
