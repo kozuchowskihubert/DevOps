@@ -134,6 +134,19 @@ prometheus-query 'up{job="kubernetes-nodes"}'
 - **Solution**: Kubeflow on Kubernetes with automated model deployment
 - **Result**: Model deployment time reduced from weeks to hours
 
+## 🎬 Epic Projects & Demos
+
+**[📁 All Projects](projects/)** - View specialized project demonstrations and case studies
+
+### Featured Projects
+- **[LinkedIn Epic Project](projects/linkedin-epic-project.html)** - Advanced job automation system
+- **[GROK AI Application](projects/grok-ai-job-application.html)** - AI-powered application platform  
+- **[Viral Campaign Builder](projects/viral-epic-campaign.html)** - Marketing automation tool
+
+### Epic Videos
+- **[🎥 Epic LinkedIn Demo](epic-linkedin-video.mp4)** - System demonstration
+- **[🚀 GROK Epic Sequence](GROK_12SEC_EPIC_FULL_EPIC_SEQUENCE.mp4)** - Full project showcase
+
 ## 📞 Contact & Collaboration
 
 ** LinkedIn**: [linkedin.com/in/hubert-kozuchowski](https://linkedin.com/in/hubert-kozuchowski)  
