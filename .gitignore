@@ -14,8 +14,8 @@ old_*
 *.pyc
 __pycache__/
 
-# Large media files
-*.mp4
+# Large media files (keeping essential videos for portfolio)
+# *.mp4  # Commented out to allow portfolio videos
 *.mov
 *.avi
 

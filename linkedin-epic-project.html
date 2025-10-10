@@ -149,32 +149,47 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="text-center mb-4">🎬 The Epic Video</h2>
+                    
+                    <!-- Primary Video Display -->
                     <div class="video-container mb-4">
-                        <video controls muted style="width: 100%; height: auto; border-radius: 10px;">
+                        <video controls muted preload="metadata" style="width: 100%; height: auto; border-radius: 10px;">
+                            <source src="./epic-linkedin-video.mp4" type="video/mp4">
                             <source src="epic-linkedin-video.mp4" type="video/mp4">
-                            <p>Your browser does not support the video tag. 
-                               <a href="epic-linkedin-video.mp4" download>Download the video</a> to view it locally.
-                            </p>
+                            <p>Your browser does not support the video tag.</p>
                         </video>
                     </div>
                     
-                    <!-- Fallback Options -->
-                    <div class="text-center mt-4">
-                        <div class="alert alert-warning">
-                            <h5>🎥 Video Access Options</h5>
-                            <p class="mb-2">If the video doesn't load above, try these alternatives:</p>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                <a href="epic-linkedin-video.mp4" class="btn btn-primary" download>
-                                    <i class="fas fa-download"></i> Download Video (4.7MB)
-                                </a>
-                                <a href="epic-linkedin-video.mp4" class="btn btn-outline-primary" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Open in New Tab
+                    <!-- GitHub Pages Video Issues Notice -->
+                    <div class="alert alert-warning text-center">
+                        <h5>⚠️ Video Loading Issues on GitHub Pages</h5>
+                        <p class="mb-3">GitHub Pages sometimes has trouble serving large video files. Here are alternative ways to view the epic demo:</p>
+                        
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <a href="https://github.com/kozuchowskihubert/DevOps/raw/main/epic-linkedin-video.mp4" 
+                                   class="btn btn-primary w-100" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i><br>
+                                    <small>View on GitHub</small>
                                 </a>
                             </div>
-                            <small class="text-muted d-block mt-2">
-                                12-second epic demo: LinkedIn automation with Grok AI visuals
-                            </small>
+                            <div class="col-md-4">
+                                <a href="https://github.com/kozuchowskihubert/DevOps/raw/main/epic-linkedin-video.mp4" 
+                                   class="btn btn-success w-100" download>
+                                    <i class="fas fa-download"></i><br>
+                                    <small>Download (4.7MB)</small>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-info w-100" onclick="window.open('data:text/html,<video controls autoplay><source src=&quot;https://github.com/kozuchowskihubert/DevOps/raw/main/epic-linkedin-video.mp4&quot; type=&quot;video/mp4&quot;></video>')">
+                                    <i class="fas fa-play"></i><br>
+                                    <small>Force Play</small>
+                                </button>
+                            </div>
                         </div>
+                        
+                        <p class="mt-3 mb-0">
+                            <strong>🎯 12-Second Epic Demo:</strong> LinkedIn automation with AI-generated visuals + custom soundtrack
+                        </p>
                     </div>
                     
                     <div class="text-center mb-4">
